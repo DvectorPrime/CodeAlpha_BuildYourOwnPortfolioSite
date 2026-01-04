@@ -1,89 +1,111 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.7.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.7.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+   <title>Victor Nwachukwu</title>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#contact-info">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="#welcome-section">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="welcome-section">
+        <br>
+        <h1 id="greeting">Hey, I am Victor</h1>
+        <p id="h1tag">Front-End Engineer passionate about building accessible and inclusive websites and web apps for everyone</p> 
+      </section>
+      <section id="tech-stack">
+        <h2>
+            MY TECH STACK
+        </h2>
+        <ul class="tech-stack-ul">
+            <li><i class="devicon-html5-plain"></i> HTML</li>
+            <li><i class="devicon-css3-plain"></i>CSS</li>
+            <li><i class="devicon-javascript-plain"></i>JavaScript</li>
+            <li><i class="devicon-typescript-plain"></i>TypeScript</li>
+            <li><i class="devicon-react-original"></i>React</li>
+            <li><i class="devicon-nextjs-original"></i>Nextjs</li>
+            <li><i class="devicon-tailwindcss-plain"></i>TailwindCSS</li>
+            <li><i class="devicon-firebase-plain"></i>Firebase</li>
+            <li><i class="devicon-materialui-plain"></i>Material-UI</li>
+            <li><i class="devicon-shadcnui-plain"></i>Shadcn UI</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>These are some of my projects</h2><hr>
+        <div class="important"><a 
+          href="https://my-quiz-app-vnp01.web.app/" 
+          target="_blank" 
+          class="project-tile">
+            <img class="project-image" src="quiz-app.png" alt="quiz app image">
+            <p><span class="fcode">&lt;</span> Government Quiz App<span>/&gt</span></p>
+          </a>
+          <a 
+          href="https://vptodo1.web.app/" 
+          target="_blank" 
+          class="project-tile">
+            <img class="project-image" src="todo-app.png" alt="project">
+            <p><span class="fcode">&lt;</span> Todo App<span>/&gt</span></p>
+          </a>
+          <a 
+          href="https://notes-app-vn01.web.app/" 
+          target="_blank" 
+          class="project-tile">
+            <img class="project-image" src="notes-app.png"
+             alt="project">
+            <p><span class="fcode">&lt;</span>Notes Application<span>/&gt</span></p>
+          </a>
+          <a 
+          href="https://rockpaperscissors-game1.firebaseapp.com/" 
+          target="_blank" 
+          class="project-tile">
+            <img class="project-image" src="rock-paper-scissors-game.png" alt="project">
+            <p><span class="fcode">&lt;</span>Rock Paper Scissors<span>/&gt</span></p>
+          </a>
+          <a 
+          href="https://gamingorders-vnp01.web.app/" 
+          target="_blank" 
+          class="project-tile">
+            <img class="project-image" src="multi-step form.png" alt="project">
+            <p><span class="fcode">&lt;</span>Multi Step Form<span>/&gt</span></p>
+          </a>
+          <!-- <div class="btn-div"><a class="btn"> <span>See more</span><i class="fa fa-chevron-right"></i>
+          </a></div> -->
+      </section>
+      <section id="contact-info">
+        <h2>Let's work together...</h2>
+        <p class="conc-tag">How do you take your coffee</p>
+        <div id="links"><a id="profile-link" href="https://www.linkedin.com/in/victor-nwachukwu-prime/" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/DvectorPrime" id="profile-link" target="_blank">
+          <i class="fa fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:nwachukwuvictor2008@gmail.com" id="profile-link" target="_blank">
+          <i class="fa fa-at"></i>
+          <span>Send a mail</span>
+        </a>
+         <a href="tel:+2347047386742" id="profile-link" target="_blank">
+          <i class="fa fa-mobile"></i>
+          <span>Call me (+2347047386742)</span>
+        </a></div>
+      </section>
+    </main>
+    <footer>
+      <p class="placeholder-footer"></p>
+      <p>© Created for <a>CodeAlpha Intership program <i class="fa fa-code-alpha"></i></a></p>
+    </footer>
   </body>
 </html>
